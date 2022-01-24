@@ -1,2 +1,2 @@
 # GraphQL Server - Azure Function
-Serverless implementation of GraphQL server in Python
+Boilerplate Serverless implementation of GraphQL server in Python using Ariadne
