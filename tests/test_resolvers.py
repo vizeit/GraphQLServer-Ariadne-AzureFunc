@@ -1,4 +1,4 @@
-from unittest import main, IsolatedAsyncioTestCase
+from unittest import IsolatedAsyncioTestCase
 from graphql import graphql
 from ariadne import make_executable_schema, load_schema_from_path
 import sys
@@ -18,6 +18,3 @@ class test_resolvers(IsolatedAsyncioTestCase):
     async def test_helloThere(self):
         result = await graphql(self.schema, "{helloThere}")
         self.assertEqual(result.data['helloThere'], "Hello There!")
-
-if __name__ == "__main__":
-    main()
