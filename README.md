@@ -57,3 +57,8 @@ return AsgiMiddleware(app).handle(req, context)
 7. Define GraphQL schema under [*Schemas*](/GraphQLAPI/Schemas/schema.graphql) folder
 
 8. Write GraphQL resolvers for the schema in [*resolvers.py*](/GraphQLAPI/resolvers.py)
+
+9. Add the unit tests under *tests* folder. Run the unit tests after any changes,
+```
+python -m unittest -v tests/*.py
+```
